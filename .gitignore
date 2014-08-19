@@ -1,0 +1,23 @@
+*.pyc
+data/pickles
+
+## python package guff
+build
+dist
+structs.egg-info
+graph_examine.egg-info/dependency_links.txt
+
+graph_examine.egg-info/not-zip-safe
+
+graph_examine.egg-info/top_level.txt
+
+graph_examine.egg-info/SOURCES.txt
+
+graph_examine.egg-info/PKG-INFO
+
+
+## data files too big for github...
+data/all_gene_putative.fa
+
+## Mac Guff
+.DS_Store
