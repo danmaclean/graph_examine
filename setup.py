@@ -10,7 +10,7 @@ Copyright (c) 2014 Dan MacLean. All rights reserved.
 from setuptools import setup
 
 setup(name='graph_examine',
-      version='0.0.0',
+      version='0.0.1',
       description='some very naive structures for kmer graphs and some runners for khmer scripts',
       url='http://github.com/danmaclean',
       author='Dan MacLean',
