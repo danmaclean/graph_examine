@@ -19,5 +19,8 @@ graph_examine.egg-info/PKG-INFO
 ## data files too big for github...
 data/all_gene_putative.fa
 
+##logs
+logs/
+
 ## Mac Guff
 .DS_Store

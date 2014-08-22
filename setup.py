@@ -11,10 +11,10 @@ from setuptools import setup
 
 setup(name='graph_examine',
       version='0.0.0',
-      description='some very structures for kmer graphs',
+      description='some very naive structures for kmer graphs and some runners for khmer scripts',
       url='http://github.com/danmaclean',
       author='Dan MacLean',
       author_email='maclean.daniel@gmail.com',
       license='GPL3',
-      packages=['structs','structs.test'],
+      packages=['structs','structs.test','runners','runners.test'],
       zip_safe=False)

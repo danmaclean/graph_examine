@@ -30,7 +30,7 @@ binaries = {
 }
 
 
-logging.basicConfig(filename='../logs/runner.log',level=logging.DEBUG)
+logging.basicConfig(filename=os.path.realpath(__file__) + '../logs/runner.log',level=logging.DEBUG)
 scratch = '../scratch/'	
 
 def make_reads(**kwargs):
