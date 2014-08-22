@@ -13,14 +13,14 @@ import unittest
 import itertools
 from time import sleep
 from Bio import SeqIO
-import igraph
+#import igraph
 
 class KmerInfo:
 	def __init__(self,fasta,k=31):
 		self.edges = []
 		self.kmer_attrs = {}
 		self.make_kmer_graph(fasta,int(k))
-		self.igraph = KmerInfo.make_igraph(self)
+		#self.igraph = KmerInfo.make_igraph(self)
 	
 	def __getitem__(self,key):
 		return self.kmer_attrs[key]
