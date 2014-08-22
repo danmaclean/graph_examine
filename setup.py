@@ -16,5 +16,6 @@ setup(name='graph_examine',
       author='Dan MacLean',
       author_email='maclean.daniel@gmail.com',
       license='GPL3',
-      packages=['structs','structs.test','runners','runners.test'],
+      scripts=['bin/run.py']
+      packages=['structs','structs.test'],
       zip_safe=False)
