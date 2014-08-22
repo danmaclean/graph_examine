@@ -34,22 +34,22 @@ def do_a_partition():
 	clean_up()
 	
 def break_a_lump():
-	
+	pass
 
 def count_partition_distributions():
 	prog = re.compile('^>(.*)\s+(\d+)\n')
-    parts = {}
-    seqs = []
-    with open(in_file, "r") as f:
-        for line in f.readlines():
-            m = prog.match(line)
-            if m:
-                seqs.append(m.group(1))
-                if int(m.group(2)) in parts:
-                    parts[int(m.group(2))].append(m.group(1))
-                else:
-                    parts[int(m.group(2))] = [m.group(1)]
-        return max(parts.keys()), list(set(seqs)), parts
+	parts = {}
+	seqs = []
+	with open(in_file, "r") as f:
+		for line in f.readlines():
+			m = prog.match(line)
+			if m:
+				seqs.append(m.group(1))
+				if int(m.group(2)) in parts:
+					parts[int(m.group(2))].append(m.group(1))
+				else:
+					parts[int(m.group(2))] = [m.group(1)]
+				return max(parts.keys()), list(set(seqs)), parts
 
 def clean_up():
 	pass
@@ -62,7 +62,7 @@ def break_lump(lump):
 	runners.filter_stoptags()
 
 def assemble():
-		
+	pass	
 
 def break_lumps(lump_list):
 	for lump in lump_list:
