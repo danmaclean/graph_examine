@@ -13,7 +13,7 @@ import random
 import argparse
 from Bio import SeqIO
 from subprocess import call
-import runners
+from structs import structs, runners
 
 #parser = argparse.ArgumentParser(description='Make datastructures of kmer overlaps from sets of genes. Save them for loading back in later')
 #parser.add_argument("-k", "--kmer_length", type=int, help="length of k to use", default=31)
