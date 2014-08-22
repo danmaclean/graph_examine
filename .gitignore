@@ -20,7 +20,7 @@ graph_examine.egg-info/PKG-INFO
 data/all_gene_putative.fa
 
 ##logs
-logs/
+logs/runner.log
 
 ## Mac Guff
 .DS_Store
