@@ -30,8 +30,8 @@ binaries = {
 }
 
 
-logging.basicConfig(filename=os.path.dirname(__file__) + '/../logs/runner.log',level=logging.DEBUG)
-scratch = os.path.dirname(__file__) + '/../scratch/'	
+logging.basicConfig(filename='runs.log',level=logging.DEBUG)
+scratch = 'scratch/'	
 
 def make_reads(**kwargs):
 	command = kwargs["binary"] 
