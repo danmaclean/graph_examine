@@ -55,6 +55,7 @@ def clean_up():
 	pass
 
 def break_lump(lump):
+	pass
 	#runners.load_graph()
 	#runners.make_initial_stop_tags()
 	
