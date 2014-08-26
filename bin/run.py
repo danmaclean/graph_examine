@@ -27,10 +27,10 @@ LARGEST_PARTITION_LIMIT = 0.5 #max proportion of reads allowed in any partition 
 
 def do_a_partition():
 	runners.load_graph()
-	runners.partition_graph()
-	runners.merge_partition()
-	runners.annotate_partitions()
-	runners.extract_partitions()
+	#runners.partition_graph()
+	#runners.merge_partition()
+	#runners.annotate_partitions()
+	#runners.extract_partitions()
 	clean_up()
 	
 def break_a_lump():
@@ -55,11 +55,11 @@ def clean_up():
 	pass
 
 def break_lump(lump):
-	runners.load_graph()
-	runners.make_initial_stop_tags()
+	#runners.load_graph()
+	#runners.make_initial_stop_tags()
 	
-	runners.partition_graphs()
-	runners.filter_stoptags()
+	#runners.partition_graphs()
+	#runners.filter_stoptags()
 
 def assemble():
 	pass	
@@ -75,27 +75,23 @@ def main():
 		runners.make_reads()
 	##check state of assembly prior
 	runners.velvet()
-	runners.summarise_assembly()
+	#runners.summarise_assembly()
 	##count kmers prior
-	runners.load_into_counting(k=31,n=4, b=2e8, t=1, outfile='meh', infile="../data/3_rgenes.fna", )
-	runners.abundance_dist()
+	#runners.load_into_counting(k=31,n=4, b=2e8, t=1, outfile='meh', infile="../data/3_rgenes.fna", )
+	#runners.abundance_dist()
 	##normalize
-	runners.normalize_by_median()
+	#runners.normalize_by_median()
 	##count normalised kmers
-	runners.load_into_counting()
-	runners.abundance_dist()
+	#runners.load_into_counting()
+	#runners.abundance_dist()
 	
 	
-	largest_partition = 1.0 
-	do_a_partition()
-	largest_partition = count_partition_distributions()
+	#largest_partition = 1.0 
+	#do_a_partition()
+	#largest_partition = count_partition_distributions()
 	##remove knots iteratively
-	while LARGEST_PARTITION_LIMIT < largest_partition:
-		break_lumps()
-		
-
-	
-	
+	#while LARGEST_PARTITION_LIMIT < largest_partition:
+		#break_lumps()
 
 
 if __name__ == "__main__":

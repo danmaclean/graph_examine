@@ -64,3 +64,7 @@ def run_generic(command):
 	if o:
 		o = o.replace("\n","<slashn>")
 		logging.warning("DONE\t{0}\t{1}\t{2}".format(command, e, time) )
+
+def velvet(**kwargs):
+	command = "bash ../bin/khmer_local/khmer/sandbox/velvet-assemble.sh {0} {1}".format(kwargs["group"],kwargs["k"])
+	
