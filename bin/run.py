@@ -62,7 +62,7 @@ def break_lump(lump):
 	#runners.filter_stoptags()
 
 def assemble():
-	pass	
+	pass
 
 def break_lumps(lump_list):
 	for lump in lump_list:
