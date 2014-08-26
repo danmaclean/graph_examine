@@ -44,8 +44,14 @@ def get_time():
 def load_into_counting(**kwargs):
 	"""runs the khmer load into counting script"""
 	outfile = scratch + kwargs["outfile"]
-	command = "python {0} --ksize {1} --n_tables {2} --min-tablesize {3} --threads {4} {5} {6}".format(binaries[kwargs["prog"]], kwargs["k"], kwargs["n"], kwargs["b"], kwargs["t"], outfile, kwargs["infile"] )
+	command = "python {0} --ksize {1} --n_tables {2} --min-tablesize {3} --threads {4} {5} {6}".format(binaries["load_into_counting"], kwargs["k"], kwargs["n"], kwargs["b"], kwargs["t"], outfile, kwargs["infile"] )
 	run_generic(command)
+
+def run_load_graph(**kwargs):
+	a = kwargs
+	command = "python {0} --ksize {1} --n_tables {2} --min-tablesize {3} {4} {5}".format(scripts["load_graph"], a["k"], a["n"], a["min_tbl_size"], a["basename"], a["input_file"])
+	run_generic_script(command)
+
 
 def run_generic(command):
 	p = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
