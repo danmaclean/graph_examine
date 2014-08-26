@@ -22,7 +22,7 @@ from structs import structs, runners
 #parser.add_argument("-i", "--bootstraps", type=int, help="number of bootstrap iterations to select")
 #opts = parser.parse_args()
 
-make_reads = True
+make_reads = False
 LARGEST_PARTITION_LIMIT = 0.5 #max proportion of reads allowed in any partition - a parameter for stopping iterative partitioning
 
 def do_a_partition():

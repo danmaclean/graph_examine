@@ -49,7 +49,7 @@ def load_into_counting(**kwargs):
 
 def run_load_graph(**kwargs):
 	a = kwargs
-	command = "python {0} --ksize {1} --n_tables {2} --min-tablesize {3} {4} {5}".format(scripts["load_graph"], a["k"], a["n"], a["min_tbl_size"], a["basename"], a["input_file"])
+	command = "python {0} --ksize {1} --n_tables {2} --min-tablesize {3} {4} {5}".format(binaries["load_graph"], a["k"], a["n"], a["min_tbl_size"], a["basename"], a["input_file"])
 	run_generic_script(command)
 
 
